@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fffc00, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 4vw;
+}
+
+.section {
+    padding-top: 90px;
+    height: 100vh;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+.section:nth-of-type(1) {
+    background-image: url(img/2-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section:nth-of-type(2) {
+    background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+}
+
+.section:nth-of-type(3) {
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+}
+
+.section:nth-of-type(4) {
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.section:nth-of-type(5) {
+    background: linear-gradient(to right, #00416a, #799f0c, #ffe000);
+}
+
+.aside-li1, .aside-li2, .aside-li3, .aside-li4, .aside-li5 {
+    width: 6px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    right: 30px;
+}
+
+.aside-li2 {
+    margin: 3vh 0;
+}
+
+.aside-li3 {
+    margin: 6vh 0;
+}
+
+.aside-li4 {
+    margin: 9vh 0;
+}
+
+.aside-li5 {
+    margin: 12vh 0;
+}
+
+.aside-li:hover {
+    width: 10px;
+    height: 10px;
+}
+
+.images {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img1 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.img2 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/css-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.img3 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/js.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.letters {
+    width: 20%;
+    height: 100px;
+    margin: 10px 47%;
+    cursor: pointer;
+}
+
+.letter {
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.h {
+    background-image: url(img/h.png);
+}
+
+.t {
+    background-image: url(img/t.png);
+}
+
+.m {
+    background-image: url(img/m.png);
+}
+
+.l {
+    background-image: url(img/l.png);
+}
+
+.homeFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeMode {
+    font-size: 9rem;
+    text-transform: uppercase;
+    background-image: url(img/water.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.3);
+    animation: home 5s ease infinite;
+    letter-spacing: 10px;
+}
+
+@keyframes home {
+    0% {
+        background-position: left 0 top 0px;
+    }
+    100% {
+        background-position: left 600px top 0px;
+    }
+}
+
+.aboutMode {
+    margin-top: -25px;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    transition: 1s;
+}
+
+.boxDiv {
+    position: absolute;
+    top: 355%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.boxesContainer {
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px double gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.card-container {
+    width: 500px;
+    height: 350px;
+    margin: 80px auto;
+    border-radius: 10px;
+    perspective: 1400px;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url(img/image1Contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background: url(img/image2Contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.click {
+    margin-left: 45%;
+    margin-top: 45%;
+}
