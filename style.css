@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 ::-webkit-scrollbar {
@@ -351,7 +352,7 @@
 }
 @media screen and (max-width: 600px){
     .boxDiv{
-        top: 365%;
+        top: 375%;
     }
     
 }
