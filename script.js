@@ -50,15 +50,15 @@ $(function () {
     $('.image').each(function (index, element) {
         $(element).mouseover(function () {
             $('.image').eq(index).animate({
-                width: '+=50',
-                height: '+=30',
+                width: '+=20',
+                height: '+=10',
                 opacity: 0.7
             }, 1000)
         })
         $(element).mouseout(function () {
             $('.image').eq(index).animate({
-                width: '-=50',
-                height: '-=30',
+                width: '-=20',
+                height: '-=10',
                 opacity: 0.7
             }, 1000)
         })
